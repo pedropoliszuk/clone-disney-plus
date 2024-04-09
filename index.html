@@ -11,15 +11,15 @@
         <div class="header__container">
             <h1>
                 <img class="header__logo" src="./dist/images/disneyplus.svg" alt="Disney+">
+            </h1>
                 <ul class="header__links">
                     <li class="header__links__item">
-                        <a href="#" class="button">Assine agora</a>
+                        <a href="#" class="button button--secondary">Assine agora</a>
                     </li>
                     <li class="header__links__item">
-                        <a href="#" class="button">Entrar</a>
+                        <a href="#" class="button button--dark">Entrar</a>
                     </li>
                 </ul>
-            </h1>
         </div>
     </header>
     <section class="hero">
@@ -153,7 +153,10 @@
         </div>
     </section>
     <section class="image-text-section image-text-section--image-full-width">
-        <img src="./dist/images/fundo_rei_leao.png" alt="Rei Leão">
+        <picture>
+            <source media="(max-width: 768px)" srcset="./dist/images/fundo_rei_leao_celular.png" />
+            <img src="./dist/images/fundo_rei_leao.png" alt="Rei Leão">
+        </picture>
         <div class="image-text-section__text_container image-text-section--image-full-width__text_container">
             <h2 class="title">Baixe filmes e séries</h2>
             <p class="text--big">Baixe e assista quando e onde quiser. Assim, seus favoritos estão sempre com você, até mesmo sem internet.</p>
